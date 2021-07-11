@@ -1,0 +1,56 @@
+<div class="animated fadeIn">
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Input Services</strong>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="form">
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">INCIDENT TYPE</label>
+              <div class="col-md-9">
+                <input name="incidentType" formControlName="incidentType" id="incidentType" class="form-control" >
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">INCIDENT CATEGORY</label>
+              <div class="col-md-9">
+                <input name="incidentCategory" formControlName="incidentCategory" id="incidentCategory" class="form-control" >
+                <span class="help-block"></span>
+              </div>
+            </div>
+          
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">INCIDENT NAME</label>
+              <div class="col-md-9">
+                <input name="incidentName" formControlName="incidentName" id="incidentName" class="form-control" >
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">INCIDENT DESCRIPTION</label>
+              <div class="col-md-9">
+                <input name="incidentDescription" formControlName="incidentDescription" id="incidentDescription" class="form-control" >
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)="submit()"><i class="fa fa-dot-circle-o"></i> SAVE</button>
+          <!-- <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button> -->
+        </div>
+      </div>
+      
+    </div>
+  
+  </div><!--/.row-->
+
+</div>

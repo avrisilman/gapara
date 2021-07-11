@@ -1,0 +1,63 @@
+<div class="animated fadeIn">
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>POST ORDER</strong>
+        </div>
+        <div class="card-body">
+          
+          <form [formGroup]="form" >
+            <input type="text" name="servicesId" hidden formControlName="servicesId" id="servicesId" class="form-control" placeholder="">
+              <input type="text" name="servicesType" hidden formControlName="servicesType" id="servicesType" class="form-control" placeholder="">
+              <input type="text" name="servicesName" hidden formControlName="servicesName" id="servicesName" class="form-control" placeholder="">
+              <input type="text" name="description" hidden formControlName="description" id="description" class="form-control" placeholder="">
+            
+            <form formGroupName='postOrder' >
+              
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">ID POST ORDER</label>
+              <div class="col-md-9">
+                <input type="text" name="postOrderId" formControlName="postOrderId" id="postOrderId" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">POST ORDER</label>
+              <div class="col-md-9">
+                <input type="text" name="postOrderName" formControlName="postOrderName" id="postOrderName" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">SOP</label>
+              <div class="col-md-9">
+                <input type="text" name="sop" formControlName="sop" id="sop" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="email-input">DESCRIPTION</label>
+              <div class="col-md-9">
+                <textarea name="description" formControlName="description" id="description" class="form-control"></textarea>
+              </div>
+            </div>
+          </form>
+
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)="submit()"><i class="fa fa-dot-circle-o"></i> SAVE</button>
+          <!-- <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button> -->
+        </div>
+      </div>
+      
+    </div>
+  
+  </div>
+
+  
+</div>

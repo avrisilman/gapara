@@ -1,0 +1,63 @@
+<div class="animated fadeIn">
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>DATA CUSTOMER (CUSTOMER NAME)</strong>
+        </div>
+        <div class="card-body">
+          <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">ID PROJECT</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+           
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">PROJECT NAME</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">PROJECT DATE</label>
+              <div class="col-md-2">
+                <input type="text" id="text-input" disabled name="text-input" class="form-control" placeholder="START DATE">
+                <span class="help-block"></span>
+              </div>
+              
+              <div class="col-md-2">
+                <input type="text" id="text-input" disabled name="text-input" class="form-control" placeholder="END DATE">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input"></label>
+              <div class="col-md-9">
+                <button style="font-size: 18px; font-weight: bold;" type="submit" (click)="service()" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> SERVICE & SITE</button>
+                <button style="font-size: 18px; font-weight: bold;" type="submit" (click)="staff()" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> STAFF & PIC</button>
+                <button style="font-size: 18px; font-weight: bold;" type="submit" (click)="inventory()" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> INVENTORY</button>
+                <button style="font-size: 18px; font-weight: bold;" type="submit" (click)="schedule()" class="btn btn-sm btn-success"><i class="fa fa-dot-circle-o"></i> SCHEDULE</button>
+              </div>
+             
+            </div>
+           
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> SAVE</button>
+         
+        </div>
+      </div>
+      
+    </div>
+  
+  </div><!--/.row-->
+</div>

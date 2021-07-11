@@ -1,0 +1,101 @@
+<div class="animated fadeIn">
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Input Company Info</strong>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="form">
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">ID INCIDENT</label>
+              <div class="col-md-9">
+                <input type="text" name="incidentId" formControlName="incidentId" id="incidentId" class="form-control" placeholder="">
+                <!-- <input type="text" name="createdDate" formControlName="createdDate" id="createdDate" class="form-control" placeholder="">
+                <input type="text" name="createdBy" formControlName="createdBy" id="createdBy" class="form-control" placeholder="">
+                <input type="text" name="updatedDate" formControlName="updatedDate" id="updatedDate" class="form-control" placeholder="">
+                <input type="text" name="updatedBy" formControlName="updatedBy" id="updatedBy" class="form-control" placeholder=""> -->
+                
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">INCIDENT NAME</label>
+              <div class="col-md-9">
+                <input type="text" name="incidentName" formControlName="incidentName" id="incidentName" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">TYPE OF INCIDENT</label>
+              <div class="col-md-9">
+                <input type="text" name="incidentType" formControlName="incidentType" id="incidentType" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">CATEGORY</label>
+              <div class="col-md-9">
+                <input type="text" name="incidentCategory" formControlName="incidentCategory" id="incidentCategory" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+           
+            <!-- <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="select1">TYPE OF INCIDENT</label>
+              <div class="col-md-9">
+                <select id="select1" name="select1" class="form-control">
+                  <option value="0"></option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="select1">CATEGORY</label>
+              <div class="col-md-9">
+                <select id="select1" name="select1" class="form-control">
+                  <option value="0"></option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="select1">SUB CATEGORY</label>
+              <div class="col-md-9">
+                <select id="select1" name="select1" class="form-control">
+                  <option value="0"></option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+              </div>
+            </div> -->
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">INCIDENT DESCRIPTION</label>
+              <div class="col-md-9">
+                <textarea class="form-control" name="incidentDescription" formControlName="incidentDescription" id="incidentDescription"></textarea>
+              </div>
+            </div>
+           
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)="submit()"><i class="fa fa-dot-circle-o"></i> SAVE</button>
+          
+          <!-- <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button> -->
+        </div>
+      </div>
+      
+    </div>
+  
+  </div><!--/.row-->
+</div>

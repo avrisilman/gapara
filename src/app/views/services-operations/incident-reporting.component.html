@@ -1,0 +1,128 @@
+<div class="animated fadeIn">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <!-- <div class="card-header">
+          <strong>Company</strong>
+          <small>Form</small>
+        </div> -->
+        
+        <div class="card-footer">
+          <div class="form-group row">
+            <div class="col-md-4">
+            <label for="country">Sort By</label>
+                <select id="select1" name="select1" class="form-control">
+                  <option value="0">Customer Name</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+
+                <label for="country"></label>
+                <select id="select1" name="select1" class="form-control">
+                  <option value="0">Project Name</option>
+                  <option value="1">Option #1</option>
+                  <option value="2">Option #2</option>
+                  <option value="3">Option #3</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+              <label for="country">&nbsp;</label>
+                  <select id="select1" name="select1" class="form-control">
+                    <option value="0">Site Name</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                  </select>
+                  <label for="country"></label>
+                  <select id="select1" name="select1" class="form-control">
+                    <option value="0">IR 0 (Status)</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                  </select>
+            </div>
+            <div class="col-md-4">
+              <label for="country">&nbsp;</label>
+                  <select id="select1" name="select1" class="form-control">
+                    <option value="0">Type Of Incident</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                  </select>
+                  <label for="country"></label>
+                  <select id="select1" name="select1" class="form-control">
+                    <option value="0">Category</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                  </select>
+                 
+            </div>
+           
+          </div>
+        
+          <button type="submit" class="btn btn-sm btn-danger" (click)="onSearch()"><i class="icon-magnifier" style="font-size: 18px; font-weight: bold;"></i> Search</button>
+          <!-- <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i>  
+          <button type="submit" class="btn btn-sm btn-primary" (click)="saveit()"><i class="icon-plus" style="font-size: 14px; font-weight: bold;"></i> Tambah</button>
+          <!-- <button type="submit" class="btn btn-sm btn-danger" (click)="saveit()"><i class="icon-doc" style="font-size: 14px; font-weight: bold;"></i> Import</button>
+          <button type="submit" class="btn btn-sm btn-danger" (click)="saveit()"><i class="icon-doc" style="font-size: 14px; font-weight: bold;"></i> Export</button> -->
+        </div>
+        
+        <div class="card-body">
+          <div class="col-6">
+          
+          </div>
+          <table class="table table-bordered table-striped table-sm">
+            <thead>
+              <tr>
+                <th>ID Incident Report</th>
+                <th>Incident Name</th>
+                <th>Type Of Incident</th>
+                <th >Category</th>
+                <th >Description</th>
+                <th >Customer Name</th>
+                <th >Project Name</th>
+                <th >Site Name</th>
+                <th >Officer</th>
+                <th style="text-align: center;">Status</th>
+                <th style="text-align: center;">
+                  </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of datas">
+                <td>{{data.incidentReportId}}</td>
+                <td>{{data.incidentName}}</td>
+                <td>{{data.incidentType}}</td>
+                <td>{{data.incidentCategory}}</td>
+                <td>{{data.incidentDescription}}</td>
+                <td>{{data.customerName}}</td>
+                <td>{{data.projectName}}</td>
+                <td>{{data.siteName}}</td>
+                <td>{{data.officer}}</td>
+                <td>{{data.status}}</td>
+                <td style="text-align: center;">
+                  <button class="badge badge-primary" (click)="onDetail()">Detail</button></td>
+              </tr>
+            </tbody>
+          </table>
+         
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
+</div>

@@ -1,0 +1,122 @@
+<div class="animated fadeIn">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <!-- <div class="card-header">
+          <strong>Company</strong>
+          <small>Form</small>
+        </div> -->
+        
+        <div class="card-footer">
+          <form [formGroup]="form">
+          <div class="form-group">
+            <label for="country"></label>
+            <input type="text" class="form-control" name="keyword" id="keyword" formControlName="keyword" placeholder="Search ...">
+          </div>
+          <button type="submit" class="btn btn-sm btn-danger" (click)="onSearch()"><i class="icon-magnifier" style="font-size: 18px; font-weight: bold;"></i> <a style="font-size: 12px; font-weight: bold;">SEARCH</a></button>
+          </form>
+          <!-- <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"> CUSTOMER LIST</i>  
+          <!-- <button type="submit" class="btn btn-sm btn-primary" (click)="saveit()"><i class="icon-plus" style="font-size: 14px; font-weight: bold;"></i> <a style="font-size: 12px; font-weight: bold;">NEW</a></button>
+          <button type="submit" class="btn btn-sm btn-danger" (click)="saveit()"><i class="icon-doc" style="font-size: 14px; font-weight: bold;"></i> <a style="font-size: 12px; font-weight: bold;">IMPORT</a></button>
+          <button type="submit" class="btn btn-sm btn-danger" (click)="saveit()"><i class="icon-doc" style="font-size: 14px; font-weight: bold;"></i> <a style="font-size: 12px; font-weight: bold;">EXPORT</a></button> -->
+        </div>
+        
+        <div class="card-body">
+          <div class="col-6">
+          
+          </div>
+          <table class="table table-bordered table-striped table-sm">
+            <thead>
+              <tr>
+                <th></th>
+                <th>CUSTOMER CODE</th>
+                <th>CUSTOMER NAME</th>
+                <th>DESCRIPTION</th>
+                <th>ADDRESS 1</th>
+                <th>ADDRESS 2</th>
+                <th>CITY</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of datas">
+                <td style="text-align: center;">
+                  <span class="badge badge-primary">PROJECT</span>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+         
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"> PROJECT LIST</i>  
+          <button type="submit" class="btn btn-sm btn-primary" (click)="saveit()"><i class="icon-plus" style="font-size: 14px; font-weight: bold;"></i> <a style="font-size: 12px; font-weight: bold;">NEW PROJECT </a></button>
+        </div>
+        
+        <div class="card-body">
+          <div class="col-6">
+          
+          </div>
+          <table class="table table-bordered table-striped table-sm">
+            <thead>
+              <tr>
+                <th></th>
+                <th>ID PROJECT</th>
+                <th>PROJECT NAME</th>
+                <th>PROJECT DATE</th>
+                <th>SERVICES</th>
+                <th>TYPE OF SERVICES</th>
+                <th>SCHEDULE PROEJECT</th>
+                <th>GEO TAGGING</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: center;">
+                  <span class="badge badge-primary">DETAIL</span>
+                  <span class="badge badge-success">EDIT</span>
+                  <span class="badge badge-danger">DELETE</span>
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td style="text-align: center;"><i class="fa fa-calendar" style="color: green; font-weight: bold; font-size: 24px;"></i>  </td>
+                <td style="text-align: center;"><i class="fa fa-map-marker" style="color: red; font-weight: bold; font-size: 24px;"></i>  </td>
+              </tr>
+            </tbody>
+          </table>
+         
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+
+</div>

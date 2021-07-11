@@ -1,0 +1,7 @@
+{
+  "/core-api/*":{
+      "target": "http://gapara.herokuapp.com",
+      "secure": false,
+      "changeOrigin": true
+  }
+}

@@ -1,0 +1,53 @@
+<div class="animated fadeIn">
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Input Services</strong>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="form">
+            
+            <!-- <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">ID Services</label>
+              <div class="col-md-9">
+                <input type="text" name="username" formControlName="username" id="username" class="form-control" placeholder="Text">
+                <span class="help-block"></span>
+              </div>
+            </div> -->
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="select1">Type Of Services</label>
+              <div class="col-md-9">
+                <select name="servicesType" formControlName="servicesType" id="servicesType" class="form-control">
+                  <option value="SECURITY">SECURITY</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Services Name</label>
+              <div class="col-md-9">
+                <input name="servicesName" formControlName="servicesName" id="servicesName" class="form-control" >
+                <span class="help-block"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="email-input">Description</label>
+              <div class="col-md-9">
+                <textarea name="description" formControlName="description" id="description" class="form-control"></textarea>
+              </div>
+            </div>
+           
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)="submit()"><i class="fa fa-dot-circle-o"></i> SAVE</button>
+          <!-- <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button> -->
+        </div>
+      </div>
+      
+    </div>
+  
+  </div><!--/.row-->
+
+</div>

@@ -1,0 +1,95 @@
+<div class="animated fadeIn">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <!-- <div class="card-header">
+          <strong>Company</strong>
+          <small>Form</small>
+        </div> -->
+        <form [formGroup]="form">
+        <div class="card-footer">
+          <div class="form-group row">
+            <div class="col-md-4">
+            <label for="country">Sort By</label>
+                <select name="customerName" id="customerName" formControlName="customerName" class="form-control">
+                  <option value="">Customer Name</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+              <label for="country">&nbsp;</label>
+                  <select name="projectName" id="projectName" formControlName="projectName" class="form-control">
+                    <option value="">Project Name</option>
+
+                  </select>
+            </div>
+            <div class="col-md-4">
+              <label for="country">&nbsp;</label>
+                  <select name="siteName" id="siteName" formControlName="siteName" class="form-control">
+                    <option value="">Site Name</option>
+                  </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-sm btn-danger" (click)="onSearch()"><i class="icon-magnifier" style="font-size: 18px; font-weight: bold;"></i> <a style="font-size: 12px; font-weight: bold;">SEARCH</a></button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i>  
+          
+          <!-- <button type="submit" class="btn btn-sm btn-danger" (click)="saveit()"><i class="icon-doc" style="font-size: 14px; font-weight: bold;"></i> Import</button>
+          <button type="submit" class="btn btn-sm btn-danger" (click)="saveit()"><i class="icon-doc" style="font-size: 14px; font-weight: bold;"></i> Export</button> -->
+        </div>
+        
+        <div class="card-body">
+          <div class="col-6">
+          
+          </div>
+          <table class="table table-bordered table-striped table-sm">
+            <thead>
+              <tr>
+                <th>Approval Id</th>
+                <th>ID Employee</th>
+                <th>Employee Name</th>
+                <th>Phone</th>
+                <th>Customer Name</th>
+                <th>Project Name</th>
+                <th>Schedule Date</th>
+                <th>Service Name</th>
+                <th></th>
+                <!-- <th style="text-align: center;"><i style="font-size: 8px; font-weight: normal; text-align: center;">
+                  <input type="checkbox"> &nbsp;<label for="country">Show Only Waiting Approval</label></i></th>
+              </tr> -->
+            </thead>
+            <tbody>
+              <tr *ngFor="let data of datas">
+                <td>{{data.attendanceApprovalId}}</td>
+                <td>{{data.employeeId}}</td>
+                <td>{{data.employeeName}}</td>
+                <td>{{data.phone}}</td>
+                <td>{{data.customerName}}</td>
+                <td>{{data.projectName}}</td>
+                <td>{{data.scheduleDate}}</td>
+                <td>{{data.serviceName}}</td>
+                <td>{{data.projectSchedule.status}}</td>
+                <!-- <td style="text-align: center;"> <label class="switch switch-label switch-pill switch-outline-success-alt">
+                  <input type="checkbox" class="switch-input" checked>
+                  <span class="switch-slider" data-checked="&#x2713;" data-unchecked="&#x2715;"></span>
+                </label></td> -->
+              </tr>
+            </tbody>
+          </table>
+         
+        </div>
+      </div>
+    </div>
+    <!--/.col-->
+  </div>
+  <!--/.row-->
+</div>

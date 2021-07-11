@@ -1,0 +1,291 @@
+<div class="animated fadeIn">
+  <div class="row">
+    <div class="col-sm-12">
+      <form [formGroup]="form">
+      <div class="card">
+        <div class="card-header">
+          <strong>Detail Employee</strong>
+          <small></small>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="city">ID Employee</label>
+              <input type="text"  name="employeeId" id="employeeId" formControlName="employeeId" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="postal-code">Aggrement/Contract</label>
+              <input type="text" name="contract" id="contract" formControlName="contract" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="city">Employee Name</label>
+              <input type="text" name="employeeName" id="employeeName" formControlName="employeeName" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="postal-code">Date Aggrement</label>
+              <input type="datetime-local" name="agreementDate" id="agreementDate" formControlName="agreementDate" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="city">KTP Number</label>
+              <input type="text" name="identityNumber" id="identityNumber" formControlName="identityNumber" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="postal-code">Start</label>
+              <input type="date" name="contractStartDate" id="contractStartDate" formControlName="contractStartDate" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="postal-code">Date</label>
+              <input type="datetime-local" name="contractEndDate" id="contractEndDate" formControlName="contractEndDate" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="city">Marital Status</label>
+              <input type="text" name="maritalStatus" id="maritalStatus" formControlName="maritalStatus" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="postal-code">Working Type</label>
+              <input type="text" name="workingType" id="workingType" formControlName="workingType" class="form-control" placeholder="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-3">
+              <label for="city">Lahir</label>
+              <input type="text" name="birthPlace" id="birthPlace" formControlName="birthPlace" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="postal-code">Tanggal Lahir</label>
+              <input type="datetime-local" name="birthDate" id="birthDate" formControlName="birthDate" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="postal-code">Job Title</label>
+              <input type="datetime-local" name="jobTitle" id="jobTitle" formControlName="jobTitle" class="form-control" placeholder="">
+            </div>
+          </div>
+         
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="city">Alamat</label>
+             <textarea name="address" id="address" formControlName="address" class="form-control"></textarea>
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="postal-code">Position / Pangkat</label>
+              <input type="text" name="position" id="position" formControlName="position" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="postal-code">Religion</label>
+              <input type="text" name="religion" id="religion" formControlName="religion" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="city">Phone</label>
+              <input type="text" name="phone" id="phone" formControlName="phone" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="postal-code">Grade / Golongan</label>
+              <input type="text" name="grade" id="grade" formControlName="grade" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="city">Email</label>
+              <input type="text" name="email" id="email" formControlName="email" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="postal-code">Departement</label>
+              <input type="text" name="department" id="department" formControlName="department" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="city">Marital Status</label>
+              <input type="text" name="maritalStatus" id="maritalStatus" formControlName="maritalStatus" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="postal-code">Upline / Manager</label>
+              <input type="text" name="upline" id="upline" formControlName="upline" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="company">Hire Place</label>
+              <input type="text" name="hirePlace" id="hirePlace" formControlName="hirePlace" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-2">
+              <label for="company">Height (CM)</label>
+              <input type="text" name="height" id="height" formControlName="height" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="company">Weight(KG)</label>
+              <input type="text" name="weight" id="weight" formControlName="weight" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="company">NPWP</label>
+              <input type="text" name="npwp" id="npwp" formControlName="npwp" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="company">KTA</label>
+              <input type="text" name="kta" id="kta" formControlName="kta" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-2">
+              <label for="company">Emergency Contact Person</label>
+              <input type="text" name="emergencyContactPerson" id="emergencyContactPerson" formControlName="emergencyContactPerson" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="company">Emergency Contact Phone</label>
+              <input type="text" name="emergencyContactPhone" id="emergencyContactPhone" formControlName="emergencyContactPhone" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-2">
+              <label for="company">Emergency Contact Position</label>
+              <input type="text" name="emergencyContactPosition" id="emergencyContactPosition" formControlName="emergencyContactPosition" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-3">
+              <label for="company">Bank Account</label>
+              <input type="text" name="bankAccount" id="bankAccount" formControlName="bankAccount" class="form-control" placeholder="">
+            </div>
+            <div class="form-group col-sm-3">
+              <label for="company">Bank Account Name</label>
+              <input type="text" name="bankAccountName" id="bankAccountName" formControlName="bankAccountName" class="form-control" placeholder="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="company">Bank Account Name</label>
+              <input type="text" name="bankAccountNumber" id="bankAccountNumber" formControlName="bankAccountNumber" class="form-control" placeholder="">
+            </div>
+          </div>
+
+
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)="submit()"><i class="fa fa-dot-circle-o"></i> SAVE</button>
+          <!-- <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Reset</button> -->
+        </div>
+      </div>
+    </form>
+    </div><!--/.col-->
+  </div><!--/.row-->
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Attachment
+        </div>
+        <div class="card-body">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Attachment Name</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Foto KTP</td>
+                <td><span class="badge badge-success">Show</span></td>
+              </tr>
+              <tr>
+                <td>SKCK</td>
+                <td><span class="badge badge-success">Show</span></td>
+              </tr>
+            </tbody>
+           
+          </table>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Working Experience
+        </div>
+        <div class="card-body">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Company Name</th>
+                <th>Core Business</th>
+                <th>Job Position</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="badge badge-success">Detail</span></td>
+              </tr>
+            </tbody>
+           
+          </table>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">
+          <i class="fa fa-align-justify"></i> Certificates (Education / Training)
+        </div>
+        <div class="card-body">
+          <table class="table table-sm">
+            <thead>
+              <tr>
+                <th>Certificat Name</th>
+                <th>Issued Date</th>
+                <th>Expired Date</th>
+                <th>Remark</th>
+                <th>Recurrent Plan</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><span class="badge badge-success">Detail</span></td>
+              </tr>
+            </tbody>
+           
+          </table>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

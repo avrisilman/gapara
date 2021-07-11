@@ -1,0 +1,118 @@
+<div class="animated fadeIn">
+ 
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <strong>Input Services</strong>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="form">
+            
+            <!-- <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Customer Code</label>
+              <div class="col-md-9">
+                <input type="text" name="username" formControlName="username" id="username" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div> -->
+           
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Customer Name</label>
+              <div class="col-md-9">
+                <input type="text" name="customerName" formControlName="customerName" id="customerName" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="email-input">Description</label>
+              <div class="col-md-9">
+                <textarea class="form-control" name="description" formControlName="description" id="description"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Address</label>
+              <div class="col-md-9">
+                <input type="text" name="address" formControlName="address" id="address" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">City</label>
+              <div class="col-md-9">
+                <input type="text" name="city" formControlName="city" id="city" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Phone</label>
+              <div class="col-md-9">
+                <input type="text" name="phone" formControlName="phone" id="phone" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">NPWP</label>
+              <div class="col-md-9">
+                <input type="text" name="npwp" formControlName="npwp" id="npwp" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">NPWP Name</label>
+              <div class="col-md-9">
+                <input type="text" name="npwpName" formControlName="npwpName" id="npwpName" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Sales (AE)</label>
+              <div class="col-md-9">
+                <input type="text" name="sales" formControlName="sales" id="sales" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Collector</label>
+              <div class="col-md-9">
+                <input type="text" name="collector" formControlName="collector" id="collector" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">PIC ID</label>
+              <div class="col-md-9">
+                <input type="text" name="picId" formControlName="picId" id="picId" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">PROVINCE</label>
+              <div class="col-md-9">
+                <input type="text" name="province" formControlName="province" id="province" class="form-control" placeholder="">
+                <span class="help-block"></span>
+              </div>
+            </div>
+           
+          </form>
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary" (click)="submit()"><i class="fa fa-dot-circle-o"></i> Submit</button>
+        </div>
+      </div>
+      
+    </div>
+  
+  </div><!--/.row-->
+</div>
